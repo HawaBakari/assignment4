@@ -24,7 +24,7 @@
 <body>
     <header>
         <nav class="flex-enabled">
-            <a href="index.html"><img class="indent" src="images/pixarlogo.png" alt="Pixar logo"></a>
+            <a href="index.html"><img class="indent mobile-logo" src="images/pixarlogo.png" alt="Pixar logo"></a>
             <div class="desktop-menu-container flex-enabled flex-right">
                     <ul class="pixar flex-enabled flex-right">
                         <li><a href="https://www.pixar.com/feature-films-launch">Feature Films</a></li>
@@ -37,9 +37,9 @@
              </div>  
 
              <div class="mobile-menu-container flex-enabled flex-right">
-                <button onclick="toggleMobileMenu()" class="mobile-menu-button"><img id="mobile-menu-image" src="images/menu-open.png" alt="menu open"></button>
+                <button onclick="toggleMobileMenu()" class="mobile-menu-button"><img class="mobile-menu-image" src="images/menu-open.png" alt="menu open"></button>
                 <div id="mobile-menu" class="mobile-menu-content">
-                    <ul class="pixar flex-enabled flex-right">
+                    <ul class="pixar">
                         <li><a href="https://www.pixar.com/feature-films-launch">Feature Films</a></li>
                         <li><a href="https://www.pixar.com/short-films-1">Short Films</a></li>
                         <li><a href="https://www.pixar.com/technology">Technology</a></li>
@@ -53,7 +53,7 @@
         </nav>
     </header>
     <section class="flex-enabled flex-center">
-        <img class="feature-image" src="images/ONWARD.jpg" alt="Onward">
+        <div class="feature-image-container"></div>
         <h1 class="headline pixar floating">Feature Films</h1>
     </section>
 

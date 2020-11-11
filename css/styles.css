@@ -72,3 +72,6 @@ body {
   width: 100%;
 }
 
+.desktop-menu-container { display: none;}
+
+.mobile-menu-button { background-color: transparent; border: none; cursor: pointer;}

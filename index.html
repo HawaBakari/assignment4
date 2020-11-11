@@ -4,6 +4,22 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/imported.css">
     <title>All About Pixar</title>
+    <script>
+        function toggleMobileMenu() {
+          document.getElementById("mobile-menu").classList.toggle("show");
+        }
+        window.onclick = function (event) {
+          if (!event.target.matches('.mobile-menu-image')) {
+            var mobileMenuContentItems = document.getElementsByClassName("mobile-menu-content");
+            for (var i = 0; i < mobileMenuContentItems.length; i++) {
+              var mobileMenuContentItem = mobileMenuContentItems[i];
+              if (mobileMenuContentItem.classList.contains("show")) {
+                mobileMenuContentItem.classList.remove("show");
+              }
+            }
+          }
+        };
+    </script>
 </head>
 <body>
     <header>
@@ -21,7 +37,7 @@
              </div>  
 
              <div class="mobile-menu-container flex-enabled flex-right">
-                <button class="mobile-menu-button"><img id="mobile-menu-image" src="images/menu-open.png"></button>
+                <button onclick="toggleMobileMenu()" class="mobile-menu-button"><img id="mobile-menu-image" src="images/menu-open.png" alt="menu open"></button>
                 <div id="mobile-menu" class="mobile-menu-content">
                     <ul class="pixar flex-enabled flex-right">
                         <li><a href="https://www.pixar.com/feature-films-launch">Feature Films</a></li>
